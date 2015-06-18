@@ -1,0 +1,1397 @@
+@import  "https://fonts.googleapis.com/css?family=Raleway|Roboto:400,400italic,700,700italic|Crete+Round";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 10, sass/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 31, sass/style.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* line 35, sass/style.scss */
+body {
+	line-height: 1;
+}
+
+/* line 38, sass/style.scss */
+ol, ul {
+	list-style: none;
+}
+
+/* line 41, sass/style.scss */
+blockquote, q {
+	quotes: none;
+}
+
+/* line 44, sass/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* line 49, sass/style.scss */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Variables */
+/* Medium aquamarine */
+/* Salmon */
+/* Mocha */
+/* Latte */
+/* Goldenrod */
+/* Light sea blue */
+/* Dark gray blue */
+/* Mixins */
+/* Icons */
+/* line 87, sass/style.scss */
+footer.entry-meta .cat-links:before, footer.entry-meta .tag-links:before, footer.entry-meta .comments-link:before, footer.entry-meta .edit-link:before, .post-navigation .nav-previous:before {
+	background: transparent url(https://la.wordcamp.org/2015/files/2015/05/icons-sm.png);
+	background-repeat: no-repeat;
+	content: '';
+	display: inline-block;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+	margin-right: .14815rem;
+	overflow: hidden;
+	height: 16px;
+	vertical-align: text-top;
+	width: 16px;
+}
+
+/* line 102, sass/style.scss */
+.post-navigation .nav-next:after {
+	background: transparent url(https://la.wordcamp.org/2015/files/2015/05/icons-sm.png);
+	background-repeat: no-repeat;
+	content: '';
+	display: inline-block;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+	margin-left: .14815rem;
+	overflow: hidden;
+	height: 16px;
+	vertical-align: text-top;
+	width: 16px;
+}
+
+/* line 117, sass/style.scss */
+footer.entry-meta .cat-links:before {
+	background-position: 0 0;
+}
+
+/* line 122, sass/style.scss */
+footer.entry-meta .tag-links:before {
+	background-position: 0 -16px;
+}
+
+/* line 127, sass/style.scss */
+footer.entry-meta .comments-link:before {
+	background-position: 0 -32px;
+}
+
+/* line 132, sass/style.scss */
+footer.entry-meta .edit-link:before {
+	background-position: 0 -48px;
+}
+
+/* line 137, sass/style.scss */
+.post-navigation .nav-previous:before {
+	background-position: 0 -64px;
+}
+
+/* line 142, sass/style.scss */
+.post-navigation .nav-next:after {
+	background-position: 0 -80px;
+}
+
+/* Styles */
+/* line 148, sass/style.scss */
+html {
+	font-size: .75rem;
+}
+
+@media print,screen and (min-width: 48rem) {
+	/* line 148, sass/style.scss */
+	html {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 88rem) {
+	/* line 148, sass/style.scss */
+	html {
+		font-size: 1.125rem;
+	}
+}
+
+/* line 158, sass/style.scss */
+body {
+	background: #ece3db;
+	background-image: url(https://la.wordcamp.org/2015/files/2015/05/otis-redding.png);
+	color: #604b43;
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+}
+
+/* line 166, sass/style.scss */
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+/* line 171, sass/style.scss */
+a {
+	color: #83bcb3;
+	text-decoration: none;
+}
+
+/* line 174, sass/style.scss */
+a:hover {
+	color: #e97067;
+}
+
+/* line 179, sass/style.scss */
+input[type='text'],
+input[type='email'],
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+/* line 186, sass/style.scss */
+input[type='submit'] {
+	background: #83bcb3;
+	border: 0 none;
+	border-radius: 4px;
+	color: #e6f2f0;
+	cursor: pointer;
+	font-size: 1.125rem;
+	font-weight: bold;
+	padding: .44444rem 1rem;
+	text-transform: uppercase;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+
+/* line 197, sass/style.scss */
+input[type='submit']:hover {
+	background: #e97067;
+	color: white;
+}
+
+/* line 203, sass/style.scss */
+.assistive-text {
+	clip: rect(1px 1px 1px 1px);
+/* IE6, IE7 */
+	clip: rect(1px,1px,1px,1px);
+	position: absolute !important;
+}
+
+/* line 209, sass/style.scss */
+.site-header {
+	background: #83bcb3 url(https://la.wordcamp.org/2015/files/2015/05/header.jpg) 50% 100% no-repeat;
+	background-size: cover;
+	border-top: 5px solid #83bcb3;
+	-moz-box-shadow: inset 0 10px 60px rgba(126,99,88,0.5);
+	-webkit-box-shadow: inset 0 10px 60px rgba(126,99,88,0.5);
+	box-shadow: inset 0 10px 60px rgba(126,99,88,0.5);
+	margin-bottom: 7.75rem;
+	position: relative;
+	text-align: center;
+}
+
+/* line 217, sass/style.scss */
+.site-header hgroup {
+	padding: 5% 0;
+}
+
+/* line 220, sass/style.scss */
+.site-header img {
+	max-width: 80%;
+}
+
+/* line 225, sass/style.scss */
+.main-navigation {
+	background: white;
+	bottom: -4.375rem;
+	font-family: "Roboto", sans-serif;
+	left: 0;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+}
+
+/* line 233, sass/style.scss */
+.main-navigation ul {
+	margin: 0 auto;
+	max-width: 62rem;
+	padding: 0 1rem;
+}
+
+/* line 241, sass/style.scss */
+.main-navigation ul li.current-menu-item > a,
+.main-navigation ul li.current_page_item > a,
+.main-navigation ul li.current_page_ancestor > a,
+.main-navigation ul li.current-menu-parent > a {
+	color: #7e6358;
+}
+
+/* line 245, sass/style.scss */
+.main-navigation ul > li {
+	display: inline-block;
+}
+
+/* line 247, sass/style.scss */
+.main-navigation ul > li a {
+	color: #62aa9f;
+	display: block;
+	padding: 1.6875rem .66667rem 1.6875rem 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	-moz-transition: color 300ms;
+	-o-transition: color 300ms;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+}
+
+/* The Vasquez Special */
+.menu-primary-nav-container {
+	width: 800px;
+	margin: auto;
+	display: block;
+}
+
+/* line 254, sass/style.scss */
+.main-navigation ul > li a:before {
+	color: #e3d6ca;
+	content: '|';
+	margin-right: .75rem;
+}
+
+/* line 259, sass/style.scss */
+.main-navigation ul > li a:hover {
+	color: #e3463a;
+}
+
+/* line 263, sass/style.scss */
+.main-navigation ul > li:first-child a:before {
+	content: '';
+}
+
+/* line 266, sass/style.scss */
+.main-navigation ul > li.menu-item-has-children {
+	position: relative;
+}
+
+/* line 268, sass/style.scss */
+.main-navigation ul > li.menu-item-has-children > a {
+	padding-right: 1rem;
+}
+
+/* line 270, sass/style.scss */
+.main-navigation ul > li.menu-item-has-children > a:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: .2963rem;
+	margin-top: -2px;
+	height: 0;
+	width: 0;
+/* order of following 3 rules important for fallbacks to work */
+	border: 4px solid transparent;
+	border-top-color: #83bcb3;
+}
+
+/* line 283, sass/style.scss */
+.main-navigation ul > li.menu-item-has-children > a:hover:after {
+	border-top-color: #e97067;
+}
+
+/* line 291, sass/style.scss */
+.main-navigation ul li:hover ul {
+	display: block;
+}
+
+/* line 295, sass/style.scss */
+.main-navigation ul ul {
+	background: rgba(255,255,255,0.9);
+	display: none;
+	top: 4em;
+	padding: .66667rem 1.125rem;
+	position: absolute;
+	width: auto;
+}
+
+/* line 302, sass/style.scss */
+.main-navigation ul ul li {
+	display: block;
+}
+
+/* line 305, sass/style.scss */
+.main-navigation ul ul a {
+	padding: .75rem 0;
+	white-space: nowrap;
+}
+
+/* line 308, sass/style.scss */
+.main-navigation ul ul a:before {
+	content: '';
+	margin-right: 0;
+}
+
+/* line 317, sass/style.scss */
+.main-small-navigation {
+	background: rgba(255,255,255,0.95);
+	position: absolute;
+	width: 100%;
+}
+
+/* line 321, sass/style.scss */
+.main-small-navigation .menu-primary-container > ul {
+	border-bottom: 5px solid #83bcb3;
+	display: none;
+}
+
+/* line 325, sass/style.scss */
+.main-small-navigation .menu-toggle {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.125rem;
+	padding: 1rem;
+	width: auto;
+}
+
+/* line 332, sass/style.scss */
+.main-small-navigation ul {
+	text-align: left;
+	padding: 0 1rem 1rem;
+}
+
+/* line 336, sass/style.scss */
+.main-small-navigation a {
+	border-bottom: 1px solid #e3d6ca;
+	display: block;
+	padding: .75rem 0;
+}
+
+/* line 343, sass/style.scss */
+#after-header-widgets {
+	margin: 1.6875rem auto;
+	max-width: 62rem;
+}
+
+/* line 346, sass/style.scss */
+#after-header-widgets:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+/* line 351, sass/style.scss */
+#after-header-widgets .widget {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin: 0 auto 1rem;
+	padding: 0 1rem;
+	width: 50%;
+}
+
+@media screen and (min-width: 36rem) {
+	/* line 351, sass/style.scss */
+	#after-header-widgets .widget {
+		width: 25%;
+	}
+}
+
+/* line 362, sass/style.scss */
+#after-header-widgets .textwidget h4 {
+	font-size: 1.5rem;
+	margin: 0 0 .75rem;
+}
+
+/* line 366, sass/style.scss */
+#after-header-widgets .textwidget img {
+	border-radius: 2px;
+	-moz-box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	-webkit-box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+
+/* line 373, sass/style.scss */
+#after-header-widgets .textwidget img:hover {
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/* line 377, sass/style.scss */
+#after-header-widgets .textwidget p:last-child {
+	margin-bottom: 0;
+}
+
+/* line 381, sass/style.scss */
+#after-header-widgets .widget:nth-child(1) img {
+	border-top: 5px solid #83bcb3;
+}
+
+/* line 384, sass/style.scss */
+#after-header-widgets .widget:nth-child(2) img {
+	border-top: 5px solid #fdc17b;
+}
+
+/* line 387, sass/style.scss */
+#after-header-widgets .widget:nth-child(3) img {
+	border-top: 5px solid #e97067;
+}
+
+/* line 390, sass/style.scss */
+#after-header-widgets .widget:nth-child(4) img {
+	border-top: 5px solid #7e6358;
+}
+
+/* line 395, sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Crete Round", serif;
+}
+
+/* line 399, sass/style.scss */
+#main {
+	background: url(https://la.wordcamp.org/2015/files/2015/05/logo-prefooter.png) 50% 100% no-repeat;
+	margin: 3.375rem auto 2.25rem;
+	max-width: 62rem;
+	padding-bottom: 7.59375rem;
+}
+
+/* line 404, sass/style.scss */
+#main:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+/* line 411, sass/style.scss */
+#primary {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 1rem;
+}
+
+@media screen and (min-width: 36rem) {
+	/* line 411, sass/style.scss */
+	#primary {
+		float: left;
+		width: 70%;
+	}
+}
+
+/* line 420, sass/style.scss */
+#secondary {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 1rem;
+}
+
+@media screen and (min-width: 36rem) {
+	/* line 420, sass/style.scss */
+	#secondary {
+		float: right;
+		width: 30%;
+	}
+}
+
+/* line 429, sass/style.scss */
+article.post,
+article.page {
+	background-color: white;
+	background-image: url(https://la.wordcamp.org/2015/files/2015/05/divider-post.png), url(https://la.wordcamp.org/2015/files/2015/05/divider-post-after.png);
+	background-position: 0 0, 50% 100%;
+	background-repeat: no-repeat, no-repeat;
+	border-radius: 2px;
+	-moz-box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	-webkit-box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	margin-bottom: 2.53125rem;
+	padding: 2.53125rem;
+	padding-top: 9.84375rem;
+	padding-bottom: 123px;
+}
+
+/* line 445, sass/style.scss */
+.entry-header {
+	margin-bottom: 1.5rem;
+}
+
+/* line 449, sass/style.scss */
+.entry-title {
+	font-size: 2.53125rem;
+	line-height: 1.125;
+	margin-bottom: .66667rem;
+	-moz-transition: color 300ms;
+	-o-transition: color 300ms;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+}
+
+/* line 454, sass/style.scss */
+.entry-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* line 457, sass/style.scss */
+.entry-title a:hover {
+	color: #83bcb3;
+}
+
+/* line 461, sass/style.scss */
+.entry-title + .entry-meta {
+	color: #cfc0ba;
+	font-family: "Crete Round", serif;
+	font-size: 1.5rem;
+}
+
+/* line 465, sass/style.scss */
+.entry-title + .entry-meta a {
+	color: #fdc17b;
+	text-decoration: none;
+	-moz-transition: color 300ms;
+	-o-transition: color 300ms;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+}
+
+/* line 469, sass/style.scss */
+.entry-title + .entry-meta a:hover {
+	color: #df3124;
+}
+
+/* line 477, sass/style.scss */
+.entry-content > p:first-of-type {
+	font-family: "Crete Round", serif;
+	font-size: 1.125rem;
+	margin-bottom: 1.125rem;
+}
+
+/* line 482, sass/style.scss */
+.entry-content blockquote {
+	font-size: 1.6875rem;
+	margin: 2.25rem 1rem;
+}
+
+/* line 489, sass/style.scss */
+.comment-content blockquote {
+	font-size: 1.5rem;
+	margin: 1.5rem .75rem;
+}
+
+/* line 497, sass/style.scss */
+.entry-content p,
+.comment-content p,
+.entry-content address {
+	line-height: 1.5;
+	margin: 0 0 1rem;
+}
+
+/* line 501, sass/style.scss */
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6,
+.comment-content h1,
+.comment-content h2,
+.comment-content h3,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6 {
+	line-height: 1.125;
+	margin: 2.25rem 0 .75rem;
+}
+
+/* line 505, sass/style.scss */
+.entry-content h1,
+.comment-content h1 {
+	font-size: 2.53125rem;
+}
+
+/* line 508, sass/style.scss */
+.entry-content h2,
+.comment-content h2 {
+	font-size: 2.25rem;
+}
+
+/* line 511, sass/style.scss */
+.entry-content h3,
+.comment-content h3 {
+	font-size: 1.6875rem;
+}
+
+/* line 514, sass/style.scss */
+.entry-content h4,
+.comment-content h4 {
+	font-size: 1.5rem;
+}
+
+/* line 517, sass/style.scss */
+.entry-content h5,
+.comment-content h5 {
+	font-size: 1.125rem;
+}
+
+/* line 520, sass/style.scss */
+.entry-content h6,
+.comment-content h6 {
+	font-size: 1rem;
+}
+
+/* line 523, sass/style.scss */
+.entry-content a,
+.comment-content a {
+	color: #e97067;
+	text-decoration: none;
+	-moz-transition: color 300ms;
+	-o-transition: color 300ms;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+}
+
+/* line 527, sass/style.scss */
+.entry-content a:hover,
+.comment-content a:hover {
+	color: #62aa9f;
+}
+
+/* line 531, sass/style.scss */
+.entry-content strong,
+.comment-content strong {
+	font-weight: bold;
+}
+
+/* line 534, sass/style.scss */
+.entry-content em,
+.comment-content em {
+	font-style: italic;
+}
+
+/* line 537, sass/style.scss */
+.entry-content blockquote,
+.comment-content blockquote {
+	border-bottom: 1px solid #1aaacd;
+	border-top: 1px solid #1aaacd;
+	font-family: "Crete Round", serif;
+	padding: 1rem;
+}
+
+/* line 542, sass/style.scss */
+.entry-content blockquote p:last-child,
+.comment-content blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* line 546, sass/style.scss */
+.entry-content ul,
+.comment-content ul {
+	list-style-type: square;
+	margin: 0 0 1rem 2.53125rem;
+}
+
+/* line 550, sass/style.scss */
+.entry-content ol,
+.comment-content ol {
+	list-style-type: decimal;
+	margin: 0 0 1rem 2.53125rem;
+}
+
+/* line 554, sass/style.scss */
+.entry-content li,
+.comment-content li {
+	line-height: 1.5;
+	margin-bottom: .33333rem;
+}
+
+/* line 558, sass/style.scss */
+.entry-content label,
+.comment-content label {
+	display: block;
+	font-weight: bold;
+	font-size: 1.125rem;
+	line-height: 1.125;
+	margin: .75rem 0 .33333rem;
+}
+
+/* line 564, sass/style.scss */
+.entry-content label span,
+.comment-content label span {
+	color: #e97067;
+	font-size: .75rem;
+	padding-left: .33333rem;
+}
+
+/* line 570, sass/style.scss */
+.entry-content input[type='text'],
+.entry-content input[type='email'],
+.entry-content textarea,
+.comment-content input[type='text'],
+.comment-content input[type='email'],
+.comment-content textarea {
+	background: #f6f2ef;
+	border: 1px solid #e3d6ca;
+	border-radius: 4px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: .5rem;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+	width: 100%;
+}
+
+/* line 580, sass/style.scss */
+.entry-content input[type='text']:focus,
+.entry-content input[type='email']:focus,
+.entry-content textarea:focus,
+.comment-content input[type='text']:focus,
+.comment-content input[type='email']:focus,
+.comment-content textarea:focus {
+	background: #fff0df;
+	border-color: #fdc17b;
+	outline: none;
+}
+
+/* line 586, sass/style.scss */
+.entry-content .contact-submit,
+.comment-content .contact-submit {
+	margin: 1rem 0;
+	text-align: center;
+}
+
+/* line 592, sass/style.scss */
+footer.entry-meta {
+	border-bottom: 1px solid #fdcd94;
+	border-top: 1px solid #fdcd94;
+	color: #cfc0ba;
+	line-height: 1.5;
+	margin: 2.25rem 0 0;
+	padding: .5rem 0;
+}
+
+/* line 599, sass/style.scss */
+footer.entry-meta .sep {
+	margin: 0 .33333rem;
+}
+
+/* line 616, sass/style.scss */
+.post-navigation {
+	line-height: 1.5;
+	margin-bottom: 1.6875rem;
+	padding: 0 2.53125rem;
+}
+
+/* line 620, sass/style.scss */
+.post-navigation:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+/* line 627, sass/style.scss */
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a {
+	color: #7e6358;
+}
+
+/* line 629, sass/style.scss */
+.post-navigation .nav-previous a:hover,
+.post-navigation .nav-next a:hover {
+	color: #e97067;
+}
+
+/* line 633, sass/style.scss */
+.post-navigation .nav-previous .meta-nav,
+.post-navigation .nav-next .meta-nav {
+	display: none;
+}
+
+/* line 637, sass/style.scss */
+.post-navigation .nav-previous {
+	float: left;
+}
+
+/* line 643, sass/style.scss */
+.post-navigation .nav-next {
+	float: right;
+}
+
+/* line 651, sass/style.scss */
+.comments-area {
+	background: white;
+	border-top: 10px solid #fdc17b;
+	border-radius: 2px;
+	-moz-box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	-webkit-box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	box-shadow: 0 0 12px rgba(126,99,88,0.1);
+	margin-bottom: 1.6875rem;
+	padding: 2.53125rem;
+}
+
+/* line 658, sass/style.scss */
+.comments-area .comments-title {
+	font-size: 2.25rem;
+	line-height: 1.125;
+	margin-bottom: 2.25rem;
+}
+
+/* line 663, sass/style.scss */
+.comments-area .comment-author {
+	line-height: 1.5;
+}
+
+/* line 665, sass/style.scss */
+.comments-area .comment-author .avatar {
+	border: 3px solid #e97067;
+	border-radius: 100%;
+	float: right;
+}
+
+/* line 671, sass/style.scss */
+.comments-area .comment-meta {
+	line-height: 1.5;
+	margin: 0 0 1.125rem;
+}
+
+/* line 678, sass/style.scss */
+.commentlist li {
+	border-bottom: 1px solid #fdcd94;
+	margin: 0 0 1.6875rem;
+	padding: 0 0 1.6875rem;
+}
+
+/* line 682, sass/style.scss */
+.commentlist li li {
+	border-bottom: 0 none;
+	border-top: 1px solid #fdcd94;
+	margin: 1.6875rem 0 0 1.5rem;
+	padding: 1.6875rem 0 0;
+}
+
+/* line 691, sass/style.scss */
+.comment-reply-link {
+	background: #83bcb3;
+	border: 0 none;
+	border-radius: 4px;
+	color: #e6f2f0;
+	cursor: pointer;
+	display: inline-block;
+	font-size: .75rem;
+	font-weight: bold;
+	padding: .44444rem .75rem;
+	text-transform: uppercase;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+
+/* line 703, sass/style.scss */
+.comment-reply-link:hover {
+	background: #e97067;
+	color: white;
+}
+
+/* line 709, sass/style.scss */
+.comment-reply-title {
+	font-size: 1.6875rem;
+	margin: 0 0 1rem;
+}
+
+/* line 715, sass/style.scss */
+#primary-sidebar .widget {
+	background: url(https://la.wordcamp.org/2015/files/2015/05/divider-widget.png) 50% 100% no-repeat;
+	margin: 0 0 2.53125rem;
+	padding-bottom: 3.79688rem;
+}
+
+/* line 720, sass/style.scss */
+#primary-sidebar input[type='text'],
+#primary-sidebar input[type='email'] {
+	background: rgba(255,255,255,0.8);
+	border: 0 none;
+	border-radius: 4px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: .5rem;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+	width: 100%;
+}
+
+/* line 729, sass/style.scss */
+#primary-sidebar input[type='text']:focus,
+#primary-sidebar input[type='email']:focus {
+	background: white;
+	outline: none;
+}
+
+/* line 734, sass/style.scss */
+#primary-sidebar input[type='submit'] {
+	display: inline-block;
+}
+
+/* line 737, sass/style.scss */
+#primary-sidebar #subscribe-submit {
+	text-align: center;
+}
+
+/* line 743, sass/style.scss */
+.widget p {
+	line-height: 1.5;
+	margin: 0 0 1rem;
+}
+
+/* line 747, sass/style.scss */
+.widget .widget-title {
+	border-bottom: 1px solid #d1bca9;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin: 0 0 .66667rem;
+	padding: 0 0 .66667rem;
+	text-transform: uppercase;
+}
+
+/* line 756, sass/style.scss */
+.widget li {
+	border-bottom: 1px solid #d1bca9;
+	line-height: 1.5;
+	margin: 0 0 .5rem;
+	padding-bottom: .5rem;
+}
+
+/* line 761, sass/style.scss */
+.widget li a {
+	color: #83bcb3;
+	text-decoration: none;
+	-moz-transition: color 300ms;
+	-o-transition: color 300ms;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+}
+
+/* line 765, sass/style.scss */
+.widget li a:hover {
+	color: #e97067;
+}
+
+/* line 772, sass/style.scss */
+.site-footer {
+	background: white;
+}
+
+/* line 776, sass/style.scss */
+#footer-widgets {
+	margin: 0 auto;
+	max-width: 62rem;
+	padding: 1.125rem;
+}
+
+/* line 780, sass/style.scss */
+#footer-widgets:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+/* line 787, sass/style.scss */
+#footer-widget-1,
+#footer-widget-2,
+#footer-widget-3 {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+
+@media screen and (min-width: 36rem) {
+	/* line 787, sass/style.scss */
+	#footer-widget-1,
+								  #footer-widget-2,
+								  #footer-widget-3 {
+		float: left;
+		width: 33.33333%;
+	}
+}
+
+@media print,screen and (min-width: 48rem) {
+	/* line 787, sass/style.scss */
+	#footer-widget-1,
+								  #footer-widget-2,
+								  #footer-widget-3 {
+		width: 20%;
+	}
+}
+
+/* line 801, sass/style.scss */
+#footer-widget-4 {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+
+@media screen and (min-width: 36rem) {
+	/* line 801, sass/style.scss */
+	#footer-widget-4 {
+		clear: both;
+		margin-top: 1rem;
+	}
+}
+
+@media print,screen and (min-width: 48rem) {
+	/* line 801, sass/style.scss */
+	#footer-widget-4 {
+		clear: none;
+		float: right;
+		margin-top: 0;
+		width: 40%;
+	}
+}
+
+/* line 816, sass/style.scss */
+.site-info {
+	background: #0e5a6a;
+	background-image: url(https://la.wordcamp.org/2015/files/2015/05/binding-dark.png);
+	padding: 3.79688rem 1rem;
+	text-align: center;
+}
+
+/* line 821, sass/style.scss */
+.site-info .site-info-generator {
+	background: url(https://la.wordcamp.org/2015/files/2015/05/logo-footer.png) 50% 0 no-repeat;
+	color: white;
+	display: block;
+	padding-top: 5.0625rem;
+}
+
+/* line 826, sass/style.scss */
+.site-info .site-info-generator:hover {
+	color: #fdc17b;
+}
+
+/* line 830, sass/style.scss */
+.site-info .site-info-network {
+	background: url(https://la.wordcamp.org/2015/files/2015/05/header-ribbon.png) 50% 0 no-repeat;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #0e5a6a;
+	cursor: pointer;
+	font-size: .75rem;
+	height: 78px;
+	left: 1.125rem;
+	padding: 7px 10px 0;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+	width: 95px;
+}
+
+/* line 843, sass/style.scss */
+.site-info .site-info-network:hover {
+	color: #e97067;
+}
+
+/* line 850, sass/style.scss */
+body div.sharedaddy h3.sd-title {
+	font-size: 1.125rem;
+	margin: 1rem 0 .75rem;
+}
+
+/* line 853, sass/style.scss */
+body div.sharedaddy h3.sd-title:before {
+	border-top: 0 none;
+	margin-bottom: 0;
+}
+
+/* line 860, sass/style.scss */
+.wcorg-organizer {
+	border-bottom: 1px solid #e3d6ca;
+}
+
+/* line 861, sass/style.scss */
+.wcorg-organizer:first-child {
+	border-top: 1px solid #e3d6ca;
+}
+
+/* line 866, sass/style.scss */
+.wcorg-organizer .wcorg-organizer-description:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+/* line 872, sass/style.scss */
+.wcorg-organizer .avatar {
+	float: left;
+	margin: 0 1rem 1rem 0;
+}
+
+/* line 876, sass/style.scss */
+.wcorg-organizer div.sharedaddy {
+	display: none;
+}
+
+/* line 881, sass/style.scss */
+.speaker {
+	border-bottom: 1px solid #e3d6ca;
+}
+
+/* line 882, sass/style.scss */
+.speaker:first-child {
+	border-top: 1px solid #e3d6ca;
+}
+
+/* line 887, sass/style.scss */
+.speaker .speaker-bio > p:first-of-type {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* line 892, sass/style.scss */
+.speaker .speaker-bio:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+/* line 898, sass/style.scss */
+.speaker .avatar {
+	float: left;
+	margin: 0 1rem 1rem 0;
+}
+
+/* line 902, sass/style.scss */
+.speaker div.sharedaddy {
+	display: none;
+}
+
+/* line 907, sass/style.scss */
+.wcpt-schedule {
+	margin: 1.125rem 0;
+}
+
+/* line 909, sass/style.scss */
+.wcpt-schedule th, .wcpt-schedule td {
+	padding: .75rem;
+}
+
+/* line 912, sass/style.scss */
+.wcpt-schedule th {
+	background: #0e5a6a;
+	border: 1px solid white;
+	color: white;
+	font-family: "Crete Round", serif;
+}
+
+/* line 918, sass/style.scss */
+.wcpt-schedule .wcpt-time {
+	background: #fff0df;
+	border: 1px solid white;
+	font-family: "Crete Round", serif;
+}
+
+/* line 923, sass/style.scss */
+.wcpt-schedule .wcpt-session-type-session {
+	background: #fffcf9;
+	border: 1px solid white;
+}
+
+/* line 928, sass/style.scss */
+.wcpt-schedule .global-session .wcpt-time {
+	background: #83bcb3;
+	color: white;
+}
+
+/* line 932, sass/style.scss */
+.wcpt-schedule .global-session .wcpt-session-type-custom {
+	background: #d6e9e6;
+	border: 1px solid white;
+}
+
+/* line 937, sass/style.scss */
+.wcpt-schedule .wcpt-session-title {
+	display: block;
+	line-height: 1.125;
+	margin-bottom: 1rem;
+}
+
+/* line 942, sass/style.scss */
+.wcpt-schedule .wcpt-session-speakers {
+	font-size: .75rem;
+	line-height: 1.125;
+}
+
+/* line 945, sass/style.scss */
+.wcpt-schedule .wcpt-session-speakers a {
+	color: #83bcb3;
+}
+
+/* line 949, sass/style.scss */
+.wcpt-schedule a {
+	color: #1aaacd;
+}
+
+/* line 951, sass/style.scss */
+.wcpt-schedule a:hover {
+	color: #e97067;
+}
+
+/* line 957, sass/style.scss */
+.sponsor-level-title {
+	border-bottom: 5px solid #83bcb3;
+	border-top: 5px solid #83bcb3;
+	color: #0e5a6a;
+	padding: .5rem;
+}
+
+/* line 964, sass/style.scss */
+.sponsor {
+	border-bottom: 1px solid #e3d6ca;
+}
+
+/* line 966, sass/style.scss */
+.sponsor .sharedaddy {
+	display: none;
+}
+
+/* line 970, sass/style.scss */
+.sponsor .sponsor-title img {
+	max-width: 60%;
+}
+
+/* line 975, sass/style.scss */
+.sponsor .sponsor-description > p:first-of-type {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* Logo replacement */
+/* line 986, sass/style.scss */
+.site-title {
+	width: 271px;
+	height: 125px;
+	background: url(https://la.wordcamp.org/2015/files/2015/05/logo.png);
+	margin: 0 auto;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto;
+}
+
+@media print,screen and (min-width: 48rem) {
+	/* line 986, sass/style.scss */
+	.site-title {
+		width: 452px;
+		height: 208px;
+	}
+}
+
+@media screen and (min-width: 88rem) {
+	/* line 986, sass/style.scss */
+	.site-title {
+		width: 543px;
+		height: 250px;
+	}
+}
+
+/* line 1009, sass/style.scss */
+.site-description {
+	display: none;
+}
+
+.menu-primary-nav-container {
+	max-width: 960px !important;
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+
+/* line 981, sass/style.scss */
+.wcb_widget_sponsors .sponsor-level {
+	background: rgba(255,255,255,0.4);
+	border-radius: 2px;
+	border-top: 5px solid #fdc17b;
+	-moz-box-shadow: 0 0 12px rgba(126,99,88,0.05);
+	-webkit-box-shadow: 0 0 12px rgba(126,99,88,0.05);
+	box-shadow: 0 0 12px rgba(126,99,88,0.05);
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* line 989, sass/style.scss */
+.wcb_widget_sponsors .sponsor-level-title {
+	border-bottom: 0 none;
+	border-top: 0 none;
+	color: #0e5a6a;
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* line 998, sass/style.scss */
+.wcb_widget_sponsors .sponsor-logo {
+	margin: 1rem 0 0;
+}
+
+/* line 1000, sass/style.scss */
+.wcb_widget_sponsors .sponsor-logo img {
+	display: block;
+}
